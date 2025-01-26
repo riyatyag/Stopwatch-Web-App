@@ -205,15 +205,14 @@ h1 {
 }
 
 .laps li:nth-child(1) {
-  background-color: #ff4d4d; /* Vibrant Red */
+  background-color: #ff4d4d; 
 }
 
 .laps li:nth-child(2) {
-  background-color: #ff6f61; /* Coral */
-}
+  background-color: #ff6f61; 
 
 .laps li:nth-child(3) {
-  background-color: #ff9800; /* Vibrant Orange */
+  background-color: #ff9800; 
 }
 
 .laps li:nth-child(4) {
