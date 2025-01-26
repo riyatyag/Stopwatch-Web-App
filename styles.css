@@ -229,57 +229,50 @@ h1 {
 }
 
 .laps li:nth-child(7) {
-  background-color: #ffeb3b; /* Vibrant Yellow */
+  background-color: #ffeb3b; 
 }
 
 .laps li:nth-child(8) {
-  background-color: #00bcd4; /* Vibrant Cyan */
+  background-color: #00bcd4; 
 }
 
 .laps li:nth-child(9) {
-  background-color: #8bc34a; /* Vibrant Light Green */
+  background-color: #8bc34a; 
 }
 
 .laps li:nth-child(10) {
-  background-color: #c2185b; /* Vibrant Pink */
-}
+  background-color: #c2185b; 
 
 .laps li:nth-child(11) {
-  background-color: #3f51b5; /* Vibrant Indigo */
+  background-color: #3f51b5; 
 }
-
 .laps li:nth-child(12) {
-  background-color: #f44336; /* Vibrant Red */
-}
+  background-color: #f44336;
 
 .laps li:nth-child(13) {
-  background-color: #ff4081; /* Vibrant Hot Pink */
-}
+  background-color: #ff4081; 
 
 .laps li:nth-child(14) {
-  background-color: #8bc34a; /* Bright Green */
-}
+  background-color: #8bc34a; 
 
 .laps li:nth-child(15) {
-  background-color: #ff9800; /* Bold Orange */
-}
+  background-color: #ff9800; 
 
 .laps li:nth-child(16) {
-  background-color: #009688; /* Teal */
+  background-color: #009688; 
 }
 
 .laps li:nth-child(17) {
-  background-color: #673ab7; /* Deep Purple */
+  background-color: #673ab7; 
 }
 
 .laps li:nth-child(18) {
-  background-color: #ff5722; /* Vibrant Deep Orange */
+  background-color: #ff5722; 
 }
 
 .laps li:nth-child(19) {
-  background-color: #00bcd4; /* Cyan */
+  background-color: #00bcd4; 
 }
 
 .laps li:nth-child(20) {
-  background-color: #ff4081; /* Vibrant Pink */
-}
+  background-color: #ff4081;
