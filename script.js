@@ -7,11 +7,10 @@ const timerDisplay = document.getElementById("timer");
 const lapsContainer = document.getElementById("laps");
 
 function formatTime(ms) {
-  const date = new Date(ms);
   const hours = String(Math.floor(ms / (1000 * 60 * 60))).padStart(2, "0");
-  const minutes = String(date.getUTCMinutes()).padStart(2, "0");
-  const seconds = String(date.getUTCSeconds()).padStart(2, "0");
-  const milliseconds = String(date.getMilliseconds()).padStart(3, "0");
+  const minutes = String(Math.floor((ms % (1000 * 60 * 60)) / (1000 * 60))).padStart(2, "0");
+  const seconds = String(Math.floor((ms % (1000 * 60)) / 1000)).padStart(2, "0");
+  const milliseconds = String(ms % 1000).padStart(3, "0");
   return `${hours}:${minutes}:${seconds}.${milliseconds}`;
 }
 
@@ -46,16 +45,22 @@ function resetTimer() {
   pauseTimer();
   elapsedTime = 0;
   updateTimerDisplay();
-  lapsContainer.innerHTML = "";
+  clearLaps();
 }
 
 function addLap() {
   if (isRunning) {
     const lapTime = formatTime(elapsedTime);
     const lapElement = document.createElement("li");
-    lapElement.textContent = lapTime;
+    lapElement.textContent = `Lap ${lapsContainer.children.length + 1} - ${lapTime}`;
+    lapElement.style.backgroundColor = getRandomColor();
     lapsContainer.appendChild(lapElement);
   }
+}
+
+function getRandomColor() {
+  const colors = ["#ff7eb3", "#6f42c1", "#20c997", "#fd7e14", "#e83e8c", "#17a2b8"];
+  return colors[Math.floor(Math.random() * colors.length)];
 }
 
 function clearLaps() {
